@@ -1,3 +1,3 @@
-# Zhifeng's Blender Playground
+# My Blender Playground
 
-This repository is a playground for testing Zhifeng's ideas about creating and designing various of 3D meshes.
+This repository is a playground for me to test me ideas about creating and designing various of 3D meshes.
