@@ -7,7 +7,7 @@ import json
 scene = bpy.context
 selected_object = scene.active_object
 
-output_file_path = r"" # Path
+output_file_path = r"" # path
 
 
 
@@ -19,9 +19,7 @@ if selected_object.type == 'MESH':
 
     json_dict = {}
     position_array = []
-    indices = []
     json_dict["position"] = position_array
-    json_dict["indices"] = indices
 
     vert_num = len(mesh_data.vertices)
 
@@ -37,7 +35,7 @@ if selected_object.type == 'MESH':
         indices.append(idxs[1])
         indices.append(idxs[2])
 
-    json.dump(json_dict, open(f"{output_file_path}.json", 'w'))
+    json.dump(json_dict, open(f"{output_file_path}\{selected_object.name}.json", 'w'))
 
     
 
